@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/Abu"
     tools:context=".MainActivity">
 
     <TextView
@@ -11,8 +12,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
-        android:text="Half Live Score"
-        android:textSize="30sp"
+        android:text="Application Live Score"
+        android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -43,14 +44,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
+    <android.widget.Button
         android:id="@+id/btn_team"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp"
         android:layout_marginBottom="20dp"
-        android:text="Next"
+        android:background="@color/Biru"
+        android:text="Selanjutnya"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -63,17 +65,16 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_team"
-        app:srcCompat="@mipmap/ic_launcher_round" />
+        android:src="@drawable/img" />
 
     <ImageView
         android:id="@+id/away_logo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         app:layout_constraintBottom_toTopOf="@+id/away_team"
-
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/home_logo"
-        app:srcCompat="@mipmap/ic_launcher_round" />
+        android:src="@drawable/img_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
